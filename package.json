@@ -1,0 +1,29 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "hello",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env app",
+    "dev": "npx nodemon --env-file=.env app",
+    "test": "cross-env NODE_ENV=test mocha test/**/*.test.js", 
+    "clean": "rm -rf node_modules/ package-log.json",
+    "eslint": "npx eslint .",
+    "eslint:fix": "npx eslint . --fix"
+  },
+  "author": "Merjam Farj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.0.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.19.0",
+    "mocha": "^11.1.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
+}
