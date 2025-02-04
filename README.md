@@ -1,5 +1,5 @@
 **Table of Contents**
-<ins>Project Setup</ins>
+Project Setup
 Installing Dependencies
 Running the Server
 Routes
